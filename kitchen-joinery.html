@@ -1,0 +1,191 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EA Kitchen & Joinery — Custom Cabinetry & Built-Ins</title><meta name="description" content="Bespoke kitchens, built-in wardrobes, and custom joinery designed and installed by EA Renovations in Benoni."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"><style>
+:root{
+  --bg:#fbfaf6;--fg:#1a2138;--card:#fff;--muted:#f1efe8;--muted-fg:#6a6f7e;
+  --primary:#1f2740;--primary-fg:#fbfaf6;--accent:#d99441;--accent-fg:#1f2740;
+  --border:#e6e1d5;--radius:14px;
+  --shadow-elegant:0 20px 50px -20px rgba(31,39,64,.35);
+  --shadow-soft:0 8px 24px -10px rgba(0,0,0,.12);
+  --gradient-hero:linear-gradient(135deg,#161c30 0%,#1f2740 60%,#7a5a3a 100%);
+  --gradient-accent:linear-gradient(135deg,#d99441,#ecc28a);
+}
+*{box-sizing:border-box;margin:0;padding:0;border-color:var(--border)}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--fg);background:var(--bg);-webkit-font-smoothing:antialiased;line-height:1.5}
+h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;letter-spacing:-.02em;line-height:1.15}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.25rem}
+.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.btn{display:inline-flex;align-items:center;gap:.5rem;justify-content:center;padding:.75rem 1.5rem;border-radius:10px;font-weight:600;font-size:.95rem;cursor:pointer;border:none;transition:all .3s ease;text-decoration:none}
+.btn-accent{background:var(--accent);color:var(--accent-fg)}
+.btn-accent:hover{background:#c98532}
+.btn-outline{background:transparent;border:1px solid rgba(255,255,255,.3);color:var(--primary-fg)}
+.btn-outline:hover{background:rgba(255,255,255,.1)}
+.btn-lg{height:48px;padding:0 2rem;font-size:1rem}
+
+/* Navbar */
+.navbar{position:sticky;top:0;z-index:50;background:rgba(251,250,246,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700}
+.brand-mark{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:var(--gradient-accent);color:var(--accent-fg);font-weight:800}
+.nav-links{display:none;gap:2rem;font-size:.92rem;font-weight:500}
+.nav-links a:hover{color:var(--accent)}
+.nav-links a.active{color:var(--accent)}
+@media(min-width:900px){.nav-links{display:flex}}
+
+/* Hero */
+.hero{background:var(--gradient-hero);color:var(--primary-fg);padding:5rem 0 6rem;position:relative;overflow:hidden}
+.hero-grid{display:grid;gap:3rem;align-items:center}
+@media(min-width:1000px){.hero-grid{grid-template-columns:1.1fr 1fr}}
+.hero h1{font-size:clamp(2.4rem,5vw,3.75rem);margin-top:1rem;text-wrap:balance}
+.hero p.lead{margin-top:1.25rem;color:rgba(251,250,246,.8);font-size:1.05rem;max-width:520px}
+.hero-ctas{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.75rem}
+.hero-stats{margin-top:2.5rem;display:flex;gap:2rem;flex-wrap:wrap}
+.hero-stats div{border-left:2px solid var(--accent);padding-left:1rem}
+.hero-stats .num{font-family:'Playfair Display',serif;font-size:1.75rem;color:var(--accent)}
+.hero-stats .lbl{font-size:.8rem;color:rgba(251,250,246,.7)}
+
+/* Form card */
+.form-card{background:var(--card);color:var(--fg);border-radius:18px;padding:2rem;box-shadow:var(--shadow-elegant)}
+.form-card h3{font-size:1.5rem;margin-bottom:.25rem}
+.form-card .sub{font-size:.9rem;color:var(--muted-fg);margin-bottom:1.25rem}
+.field{margin-bottom:.9rem}
+.field label{display:block;font-size:.82rem;font-weight:600;margin-bottom:.35rem}
+.field input,.field textarea,.field select{width:100%;padding:.7rem .85rem;border:1px solid var(--border);border-radius:10px;font:inherit;background:#fafaf6}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(217,148,65,.2)}
+
+/* Trust badges */
+.trust{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:rgba(241,239,232,.5)}
+.trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;padding:2rem 0}
+@media(min-width:768px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
+.trust-item{display:flex;align-items:center;gap:.75rem}
+.trust-icon{width:44px;height:44px;border-radius:10px;background:rgba(217,148,65,.15);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.trust-label{font-weight:600}
+.trust-sub{font-size:.78rem;color:var(--muted-fg)}
+
+/* Sections */
+section.pad{padding:5rem 0}
+.section-head{text-align:center;max-width:640px;margin:0 auto 3rem}
+.section-head h2{font-size:clamp(2rem,4vw,3rem);margin-top:.75rem;text-wrap:balance}
+.section-head p{color:var(--muted-fg);margin-top:1rem}
+
+/* Services */
+.services{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.service-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.5rem;transition:all .3s ease}
+.service-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-elegant);border-color:rgba(217,148,65,.4)}
+.service-icon{width:48px;height:48px;border-radius:12px;background:var(--gradient-accent);color:var(--accent-fg);display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:1rem}
+.service-card h3{font-size:1.2rem;margin-bottom:.4rem}
+.service-card p{font-size:.9rem;color:var(--muted-fg)}
+
+/* Why us */
+.whyus{background:rgba(241,239,232,.5)}
+.whyus-grid{display:grid;gap:3rem;align-items:center}
+@media(min-width:900px){.whyus-grid{grid-template-columns:1fr 1fr}}
+.whyus-img{position:relative}
+.whyus-img img{border-radius:18px;box-shadow:var(--shadow-elegant);aspect-ratio:4/5;object-fit:cover;width:100%}
+.whyus-badge{position:absolute;bottom:-1.25rem;right:-1rem;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.25rem;box-shadow:var(--shadow-soft);max-width:220px}
+.whyus-badge .num{font-family:'Playfair Display',serif;font-size:1.85rem;color:var(--accent)}
+.whyus-badge .txt{font-size:.85rem;color:var(--muted-fg);margin-top:.25rem}
+.whyus h2{font-size:clamp(2rem,4vw,3rem);margin-top:.5rem}
+.whyus ul{list-style:none;margin-top:2rem}
+.whyus li{display:flex;gap:1rem;margin-bottom:1.25rem}
+.check{width:28px;height:28px;border-radius:999px;background:var(--accent);color:var(--accent-fg);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:bold}
+
+/* Gallery */
+.gallery{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.gallery a{display:block;border-radius:14px;overflow:hidden;aspect-ratio:4/3;position:relative}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.gallery a:hover img{transform:scale(1.05)}
+
+/* Reviews */
+.reviews-section{background:var(--primary);color:var(--primary-fg);padding:5rem 0}
+.reviews-section h2{color:var(--primary-fg)}
+.reviews{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.review-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:1.75rem;position:relative}
+.stars{color:var(--accent);margin-bottom:1rem;letter-spacing:2px}
+.review-text{color:rgba(251,250,246,.85);line-height:1.6}
+.review-author{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.1)}
+.review-author .name{font-weight:600}
+.review-author .role{font-size:.8rem;color:rgba(251,250,246,.6)}
+
+/* CTA */
+.cta-wrap{padding:5rem 0}
+.cta-box{background:var(--gradient-hero);color:var(--primary-fg);border-radius:24px;padding:4rem 2rem;text-align:center;box-shadow:var(--shadow-elegant);position:relative;overflow:hidden}
+.cta-box h2{font-size:clamp(2rem,4vw,3rem);margin-top:.75rem;max-width:600px;margin-left:auto;margin-right:auto}
+.cta-box p{margin-top:1rem;color:rgba(251,250,246,.8);max-width:500px;margin-left:auto;margin-right:auto}
+.cta-box .ctas{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
+
+/* Footer */
+footer{background:var(--primary);color:var(--primary-fg)}
+.foot-grid{display:grid;gap:2.5rem;padding:3.5rem 0;grid-template-columns:1fr}
+@media(min-width:768px){.foot-grid{grid-template-columns:2fr 1fr 1fr}}
+footer h4{font-family:'Playfair Display',serif;font-size:1.15rem;margin-bottom:1rem}
+footer ul{list-style:none}
+footer li{margin-bottom:.5rem;font-size:.9rem;color:rgba(251,250,246,.7)}
+footer a:hover{color:var(--accent)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.1);padding:1.25rem 0;font-size:.78rem;color:rgba(251,250,246,.6);display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+
+/* Page hero */
+.page-hero{background:var(--gradient-hero);color:var(--primary-fg);padding:5rem 0;text-align:center}
+.page-hero h1{font-size:clamp(2.5rem,5vw,4rem);margin-top:.75rem}
+.page-hero p{margin-top:1.25rem;color:rgba(251,250,246,.8);max-width:640px;margin:1.25rem auto 0}
+
+/* Content blocks */
+.prose p{margin-bottom:1rem;color:var(--muted-fg);line-height:1.7}
+.two-col{display:grid;gap:3rem;align-items:center}
+@media(min-width:900px){.two-col{grid-template-columns:1fr 1fr}}
+.two-col img{border-radius:18px;box-shadow:var(--shadow-elegant);width:100%;aspect-ratio:4/3;object-fit:cover}
+</style></head><body>
+<nav class="navbar"><div class="container nav-inner">
+  <a class="brand" href="index.html"><span class="brand-mark">EA</span> EA Renovations</a>
+  <div class="nav-links">
+    <a href="index.html" class="">Home</a><a href="about.html" class="">About</a><a href="services.html" class="">Services</a><a href="kitchen-joinery.html" class="active">Kitchen & Joinery</a><a href="gallery.html" class="">Gallery</a><a href="contact.html" class="">Contact</a>
+  </div>
+  <a href="contact.html" class="btn btn-accent" style="padding:.55rem 1.1rem">Get Quote →</a>
+</div></nav>
+<section class="page-hero"><div class="container"><span class="eyebrow">EA Kitchen & Joinery</span><h1>Bespoke kitchens & joinery, built to last</h1><p>From 3D design concepts to flawless installation — we deliver custom cabinetry tailored to how you live and work.</p></div></section>
+<section class="pad"><div class="container two-col">
+  <img src="assets/hero-kitchen.jpg" alt="Modern custom kitchen by EA Renovations">
+  <div class="prose">
+    <span class="eyebrow">Our process</span><h2 style="font-size:2rem;margin:.5rem 0 1rem">Designed for you, built for life</h2>
+    <p>Every kitchen and joinery project starts with a free in-home consultation. We measure, listen, and create a 3D visualisation so you can see the design before we build a thing.</p>
+    <p>We use premium materials, professional-grade hardware, and tested finishes to ensure your investment lasts. Our workshop produces precision-cut cabinetry, and our installers handle delivery, fitting, and final touches.</p>
+    <p>Whether you want a modern minimalist kitchen, a classic country look, or a built-in wardrobe that maximises every centimetre of space — we've done it before, and we'd love to do it for you.</p>
+  </div>
+</div></section>
+<section class="pad" style="background:rgba(241,239,232,.5)"><div class="container">
+  <div class="section-head"><span class="eyebrow">What we make</span><h2>Joinery specialties</h2></div>
+  <div class="services"><div class="service-card"><div class="service-icon">🍳</div><h3>Custom Kitchens</h3><p>Modern, classic, and contemporary kitchens designed around how you cook and entertain.</p></div><div class="service-card"><div class="service-icon">🚪</div><h3>Built-in Wardrobes</h3><p>Floor-to-ceiling storage tailored to your bedroom layout.</p></div><div class="service-card"><div class="service-icon">📐</div><h3>3D Design</h3><p>See your project come to life before construction begins.</p></div><div class="service-card"><div class="service-icon">🔨</div><h3>Vanities & Storage</h3><p>Bathroom vanities, TV units, study nooks, and more.</p></div></div>
+</div></section>
+
+<section class="pad"><div class="container">
+  <div class="section-head"><span class="eyebrow">Our work</span><h2>Recent projects</h2><p>A selection of renovations and fit-outs delivered for clients across Gauteng.</p></div>
+  <div class="gallery"><a href="assets/hero-kitchen.jpg"><img src="assets/hero-kitchen.jpg" alt="EA Renovations project" loading="lazy"></a><a href="assets/gallery-bathroom.jpg"><img src="assets/gallery-bathroom.jpg" alt="EA Renovations project" loading="lazy"></a><a href="assets/gallery-joinery.jpg"><img src="assets/gallery-joinery.jpg" alt="EA Renovations project" loading="lazy"></a><a href="assets/gallery-living.jpg"><img src="assets/gallery-living.jpg" alt="EA Renovations project" loading="lazy"></a><a href="assets/gallery-paving.jpg"><img src="assets/gallery-paving.jpg" alt="EA Renovations project" loading="lazy"></a><a href="assets/gallery-solar.jpg"><img src="assets/gallery-solar.jpg" alt="EA Renovations project" loading="lazy"></a></div>
+</div></section>
+<section class="reviews-section"><div class="container">
+  <div class="section-head"><span class="eyebrow">Client stories</span><h2 style="color:var(--primary-fg)">What clients say</h2></div>
+  <div class="reviews"><div class="review-card"><div class="stars">★★★★★</div><p class="review-text">"EA Renovations transformed our kitchen beyond expectations. The team was professional, on time, and delivered exactly what was quoted. Best decision we made."</p><div class="review-author"><div class="name">Thandi M.</div><div class="role">Homeowner, Benoni</div></div></div><div class="review-card"><div class="stars">★★★★★</div><p class="review-text">"We've worked with EA on three commercial fit-outs. Quality is consistent and they always meet deadlines. They're now our go-to renovation partner."</p><div class="review-author"><div class="name">Pieter v.d. Merwe</div><div class="role">Property Developer</div></div></div><div class="review-card"><div class="stars">★★★★★</div><p class="review-text">"From design to installation, they handled everything. The custom joinery is beautiful and the project came in under budget. Highly recommended."</p><div class="review-author"><div class="name">Naledi K.</div><div class="role">Restaurant Owner</div></div></div></div>
+</div></section>
+<section class="cta-wrap"><div class="container"><div class="cta-box">
+  <span class="eyebrow">Free, no-obligation quote</span>
+  <h2>Ready to transform your space?</h2>
+  <p>Tell us about your project and we'll get back within 24 hours with a tailored plan and clear pricing.</p>
+  <div class="ctas"><a href="contact.html" class="btn btn-accent btn-lg">Get Free Quote →</a><a href="tel:+27000000000" class="btn btn-outline btn-lg">📞 Call us today</a></div>
+</div></div></section>
+<footer><div class="container foot-grid">
+  <div>
+    <div class="brand" style="color:var(--primary-fg);margin-bottom:1rem"><span class="brand-mark">EA</span> EA Renovations</div>
+    <p style="color:rgba(251,250,246,.7);font-size:.9rem;max-width:420px">Full-service renovation & fit-out contractor in Benoni. Transforming homes and commercial spaces since 2000 with quality workmanship and reliable delivery.</p>
+  </div>
+  <div><h4>Explore</h4><ul>
+    <li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li>
+    <li><a href="kitchen-joinery.html">Kitchen & Joinery</a></li><li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul></div>
+  <div><h4>Get in touch</h4><ul>
+    <li>📍 Benoni, South Africa</li><li>📞 +27 (0) 00 000 0000</li><li>✉ info@earenovations.co.za</li>
+  </ul></div>
+</div><div class="container foot-bot">
+  <span>© 2026 EA Renovations. All rights reserved.</span>
+  <span>Design & build · Tiling · Joinery · Solar · Paving</span>
+</div></footer></body></html>
